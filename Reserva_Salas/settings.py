@@ -75,12 +75,15 @@ WSGI_APPLICATION = 'Reserva_Salas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'sql_server.pyodbc',
         'NAME': 'proyecto',
-        'USER': 'usuario',
-        'PASSWORD' : 'usuario',
-        'HOST' : 'localhost',
-        'PORT' : '3306'
+        'USER': 'Reserva',
+        'PASSWORD' : 'Reserva',
+        'HOST' : 'DESKTOP-5FBH6GA\SQLEXPRESS',
+        'PORT' : '',
+        'OPTIONS':{
+            'driver': 'ODBC Driver 17 for SQL Server'
+             },
     }
 }
 

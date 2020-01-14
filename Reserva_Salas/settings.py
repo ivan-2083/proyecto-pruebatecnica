@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'Reserva_Salas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'Arriendos',
+        'NAME': 'bd_reservar_salas',
         'USER': 'Reserva',
         'PASSWORD' : 'Reserva',
         'HOST' : 'DESKTOP-5FBH6GA\SQLEXPRESS',
@@ -123,6 +123,12 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+LOGIN_REDIRECT_URL = 'index'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 
 
 # Static files (CSS, JavaScript, Images)

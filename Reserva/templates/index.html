@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+      <link rel="stylesheet" href=" {% static "css/estilo.css" %}" >
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Arriendar Sala</title>
+</head>
+<body>
+
+
+
+
+
+
+    <div class="container " style="padding-top: 5%;">
+        <div class="card   col-md-12">
+           <form action="{% url "ArrendarSala" %}" id="" method="post"  class=" formulario " enctype="multipart/form-data" >
+               <div class="container ">
+                       
+                       <h3 >completes los datos para Arrendar la sala deseada:</h3>
+                       
+                    
+               </div>
+          
+           {% csrf_token %}
+                   <br>
+                   <label for="">Region: </label>
+                        <div class="form-group">
+                            <select class="form-control" name="Estado" >
+                                <option value="">Seleccione region</option>
+                                <option value="Rescatado">Rescatado</option>
+                                <option value="Disponible">Disponible</option>
+                                <option value="Adoptado">Adoptado</option>
+                            </select>
+                        </div>
+                   <br>
+                   <label for="">Comuna: </label>
+                        <div class="form-group">
+                            <select class="form-control" name="Estado" >
+                                <option value="">Seleccione comuna</option>
+                                <option value="Rescatado">Rescatado</option>
+                                <option value="Disponible">Disponible</option>
+                                <option value="Adoptado">Adoptado</option>
+                            </select>
+                        </div>
+                    <br>
+                   <label for="">Sala </label>
+                        <div class="form-group">
+                            <select class="form-control" name="Estado" >
+                                <option value="">Seleccione Sala</option>
+                                <option value="Rescatado">Rescatado</option>
+                                <option value="Disponible">Disponible</option>
+                                <option value="Adoptado">Adoptado</option>
+                            </select>
+                        </div>
+                   <br>
+                   <label for="">Fecha: </label>
+                   <input type="date" class=" form-control" required  name="descripcion" id="soloLetras" placeholder="Perro de 45 kilos, 90cm de alto, etc" >
+                   <br>
+                   <label for="">Hora: </label>
+                       
+                   
+                   <input type="time" class=" form-control" required  name="descripcion" id="soloLetras" placeholder="Perro de 45 kilos, 90cm de alto, etc" >
+                   
+           
+                    <input class="btn  form-control " type="submit" value="ArrendarS">
+           
+               <br>
+               <br>
+
+
+       
+   
+          </form>
+         </div>
+   </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="{% static "js/app.js" %}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+
+</body>
+</html>

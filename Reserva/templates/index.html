@@ -31,44 +31,45 @@
                    <br>
                    <label for="">Region: </label>
                         <div class="form-group">
-                            <select class="form-control" name="Estado" >
+                            <select class="form-control" name="region" >
                                 <option value="">Seleccione region</option>
-                                <option value="Rescatado">Rescatado</option>
-                                <option value="Disponible">Disponible</option>
-                                <option value="Adoptado">Adoptado</option>
+                                {%for p in Region%}
+                                <option value="{{p.rrg_id}}">{{p.rrg_nombre}} , {{p.rrg_ordinal}}</option>
+                                {% endfor %} 
                             </select>
                         </div>
                    <br>
                    <label for="">Comuna: </label>
                         <div class="form-group">
-                            <select class="form-control" name="Estado" >
+                            <select class="form-control" name="comuna" >
                                 <option value="">Seleccione comuna</option>
-                                <option value="Rescatado">Rescatado</option>
-                                <option value="Disponible">Disponible</option>
-                                <option value="Adoptado">Adoptado</option>
+                                {%for p in Comuna%}
+                                <option value="{{p.rcm_id}}">{{p.rcm_nombre}} </option>
+                                {% endfor %}
                             </select>
                         </div>
                     <br>
                    <label for="">Sala </label>
                         <div class="form-group">
-                            <select class="form-control" name="Estado" >
+                            <select class="form-control" name="sala" >
                                 <option value="">Seleccione Sala</option>
-                                <option value="Rescatado">Rescatado</option>
-                                <option value="Disponible">Disponible</option>
-                                <option value="Adoptado">Adoptado</option>
+                                {%for p in Sala%}
+                                <option value="{{p.msl_id}}">{{p.msl_nombre}} {{p.msl_numero}} </option>
+                                {% endfor %}
+                               
                             </select>
                         </div>
                    <br>
                    <label for="">Fecha: </label>
-                   <input type="date" class=" form-control" required  name="descripcion" id="soloLetras" placeholder="Perro de 45 kilos, 90cm de alto, etc" >
+                   <input type="date" class=" form-control" required  name="fecha" >
                    <br>
                    <label for="">Hora: </label>
                        
                    
-                   <input type="time" class=" form-control" required  name="descripcion" id="soloLetras" placeholder="Perro de 45 kilos, 90cm de alto, etc" >
+                   <input type="time" class=" form-control" required  name="hora" >
                    
            
-                    <input class="btn  form-control " type="submit" value="ArrendarS">
+                    <input class="btn  form-control " type="submit" value="Arrendar Sala">
            
                <br>
                <br>

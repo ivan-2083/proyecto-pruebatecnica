@@ -25,4 +25,4 @@ class Regionserialaizer(serializers.ModelSerializer):
 
     class Meta:
         model = nub_arrendar
-        fields = ('rrg_ordinal')
+        fields = ('rrg_ordinal','rrg_id')

@@ -28,9 +28,9 @@ class mae_sala(models.Model):
         return "mae_sala"
 
 class nub_arrendar(models.Model):
-    nrr_id_sala =models.ForeignKey(mae_sala, on_delete=models.CASCADE)
-    nrr_id_comuna =models.ForeignKey(ref_comuna, on_delete=models.CASCADE)
-    nrr_id_region=models.ForeignKey(ref_region, on_delete=models.CASCADE)
+    nrr_id_sala =models.IntegerField()
+    nrr_id_comuna =models.IntegerField()
+    nrr_id_region=models.IntegerField()
     nrr_fecha =models.DateField()
     nrr_hora = models.TimeField(null=True)
     def __str__(self):

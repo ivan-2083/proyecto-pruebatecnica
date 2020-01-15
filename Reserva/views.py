@@ -15,11 +15,12 @@ def index(request):
 
 def ArrendarSala (request):
     
-    nrr_id_sala = request.POST.get('correo','')
-    nrr_id_comuna = request.POST.get('nombre','')
-    nrr_id_region = request.POST.get('run','')
-    nrr_fecha = request.POST.get('claveUsu','')
-    nrr_hora = request.POST.get('fechaNac','')
+    nrr_id_sala = request.POST.get('sala',int)
+    nrr_id_comuna = request.POST.get('comuna','')
+    nrr_id_region = request.POST.get('region','')
+    nrr_fecha = request.POST.get('fecha','')
+    nrr_hora = request.POST.get('hora','')
     arrendar = nub_arrendar(nrr_id_sala=nrr_id_sala,nrr_id_comuna=nrr_id_comuna,nrr_id_region=nrr_id_region,nrr_fecha=nrr_fecha,nrr_hora=nrr_hora)
     arrendar.save()
+    return redirect('index')   
       

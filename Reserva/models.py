@@ -28,9 +28,9 @@ class mae_sala(models.Model):
         return "mae_sala"
 
 class nub_arrendar(models.Model):
-    nrr_id_sala =models.IntegerField()
-    nrr_id_comuna =models.IntegerField()
-    nrr_id_region=models.IntegerField()
+    nrr_nombre_sala =models.CharField(max_length=100)
+    nrr_nombre_comuna =models.CharField(max_length=100)
+    nrr_nombre_region=models.CharField(max_length=100)
     nrr_fecha =models.DateField()
     nrr_hora = models.TimeField(null=True)
     def __str__(self):

@@ -1,0 +1,53 @@
+
+#formulario{
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+   
+    padding-bottom: 2%;
+    
+}
+
+#select2{
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#t2{
+   
+    border-radius: 2%;
+    border-color: black;
+}
+#titulo{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2%;
+    text-align: center;
+}
+#lbform{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-color: black;
+}
+
+#boton{
+    padding-top: 2%;
+    
+}
+#boton2{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-color: black;
+    
+}
+
+#grilla{
+    padding-top: 2%;
+    border-color: black ;
+}
+#tablita{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

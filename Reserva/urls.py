@@ -5,14 +5,18 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth import views
 from django.urls import path
-from . import views
 from rest_framework import routers
+
+from . import views
+
+
 
 
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('Arrendar',views.ArrendarSala,name="ArrendarSala"),
+    path('Grilla',views.Grilla,name="Grilla"),
 
 
 

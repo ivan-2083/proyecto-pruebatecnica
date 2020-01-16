@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'Reserva_Salas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'bd_reservar_salas',
+        'NAME': 'bd_reservar_sala',
         'USER': 'Reserva',
         'PASSWORD' : 'Reserva',
         'HOST' : 'DESKTOP-5FBH6GA\SQLEXPRESS',

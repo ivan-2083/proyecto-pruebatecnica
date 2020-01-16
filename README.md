@@ -4,7 +4,9 @@ importente
     instalar 
     django-pyodbc-azure ( pip install django-pyodbc-azure)
     Microsoft ODBC Driver 17 for SQL Server
-    
+    python 3.8.1
+	django 2.1.15
+
     scrip incesionde datos
 
     Regiones
